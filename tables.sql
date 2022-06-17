@@ -1,0 +1,2 @@
+CREATE TABLE trips(id serial PRIMARY KEY, date timestamp NOT NULL, employee char(128) NOT NULL, tripObjective text);
+CREATE TABLE orders(id serial PRIMARY KEY, fk_trip_id int REFERENCES trips NOT NULL, type orderType NOT NULL, price money NOT NULL DEFAULT '0', description text);

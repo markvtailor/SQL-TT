@@ -1,0 +1,1 @@
+CREATE TYPE orderType AS ENUM ('air','train','hotel');
